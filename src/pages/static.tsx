@@ -10,7 +10,7 @@ type ApiResponse = {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-    const staticData = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/hello`).then(res => res.json()12)
+    const staticData = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/hello`).then(res => res.json())
 
     return {
       props: {
