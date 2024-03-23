@@ -3,7 +3,7 @@
 import { NextPage } from "next";
 import Head from "next/head";
 
-const Cart: Nextpage = () => {
+const Cart: NextPage = () => {
   return (
     <>
       <Head>
