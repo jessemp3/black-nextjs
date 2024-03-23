@@ -1,6 +1,6 @@
 // pages/cart.tsx
 
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import Head from "next/head";
 
 const Cart: NextPage = () => {
