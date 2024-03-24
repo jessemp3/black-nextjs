@@ -20,7 +20,7 @@ const ProductDetails: React.FC<ProductDetailsProps> = ({ product }) => {
           src={product.imageUrl}
           alt={product.name}
           height={400}
-          width={600}
+          width={500}
         />
       </Col>
 

@@ -7,7 +7,6 @@ import { Container } from "reactstrap";
 import Header from "../../src/components/Header";
 import ProductDetails from "@/components/productsDetails";
 import { fetchProduct, fetchProducts, ProductType } from "../../src/services/products";
-import { getStaticPaths } from "next/dist/build/templates/pages";
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const id = context.params?.id
@@ -24,7 +23,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
     } }
 }
 
-export const getStaticpaths: GetStaticPaths = async () => {
+export const getStaticPaths: GetStaticPaths = async () => {
     const products = await fetchProducts()
 
     const paths = products.map(product => {
