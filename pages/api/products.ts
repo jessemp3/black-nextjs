@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import products from '../../../database.json'
+import products from '../../database.json'
 
 export default function handle(req: NextApiRequest, res: NextApiResponse ){
       res.status(200).json(products)
